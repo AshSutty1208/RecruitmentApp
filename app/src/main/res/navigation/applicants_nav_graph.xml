@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/applicantsFragment"
+    android:id="@+id/applicants_nav_graph">
+
+    <fragment
+        android:id="@+id/applicantsFragment"
+        android:name="com.ashleysutton.lockwoodrecruitmentapp.app.ui.applicants.ApplicantsFragment"
+        android:label="Applicants"
+        tools:layout="@layout/applicants_fragment" >
+        <action
+            android:id="@+id/action_applicantsFragment_to_applicantDetailsFragment"
+            app:destination="@id/characterDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterDetailFragment"
+        android:name="com.ashleysutton.lockwoodrecruitmentapp.app.ui.applicant_detail.ApplicantDetailFragment"
+        android:label="Applicant"
+        tools:layout="@layout/applicant_detail_fragment" />
+
+</navigation>
